@@ -1,89 +1,54 @@
-# mwtAC
+# ⚡ mwtAC (連打 - Renda)
 
-Assistente de cliques em **Java (Swing)** para Minecraft 1.7.10 / 1.8.9, com interface de tema japonês.
-Projeto de apresentação da faculdade, criado por [**mwtheuskkj**](https://github.com/mwtheuskkj).
-
-> ⚠️ **Aviso:** muitos servidores proíbem autoclickers e podem banir a conta. Use no modo solo, em servidores próprios ou onde for permitido. O mwtAC não se responsabiliza por punições.
+> *“A simplicidade é o auge da sofisticação.”*  
+> Auto-clicker minimalista e veloz focado em desempenho e precisão para **Minecraft 1.8.9** & **1.7.10**.
 
 ---
 
-## ✨ Funcionalidades
+## ⛩️ Visão Geral (概要)
 
-### Início
-- **CPS de 1 a 14**, com botão esquerdo, direito ou dual.
-- **Drops de CPS:** durante o uso, a taxa cai de tempos em tempos (ex.: 14 → 12/10) e volta ao normal.
-- **Clique contínuo enquanto segura:** interruptor que liga/desliga os drops. Desligado, a taxa fica constante.
-- **Toggle Key:** defina uma tecla para ativar/desativar o programa de qualquer janela, sem precisar abri-lo.
-  Clique em *DEFINIR TECLA* e aperte a tecla desejada (`Esc` cancela, `Del` remove).
-- **Teste de CPS:** segure o botão do mouse na área de teste, com o programa ativo, para ver o CPS atual, o máximo, o total de cliques e um gráfico dos últimos 10 segundos.
+**mwtAC** foi criado para oferecer o máximo de desempenho com o mínimo de distração. Sem menus poluídos ou recursos desnecessários — apenas constância, baixa latência e foco no PvP.
 
-### Configurações
-- Tema escuro/claro, cor de destaque (cores prontas ou seletor próprio) e modo arco-íris.
-- **Liberar 20 CPS:** aumenta o limite de 14 para 20, com um pop-up avisando do risco de banimento.
-- Continuar em segundo plano (bandeja do sistema).
-- Restaurar padrões.
-- **Self-destruct:** encerra o programa por completo, sem deixar nada em segundo plano nem na bandeja.
-- Pop-ups no tema do programa, com animação de fade-in/fade-out.
-
-### Sobre
-- Descrição, aviso de responsabilidade e perfil do criador.
-
-As preferências ficam salvas em `~/.mwtac/config.properties`.
+* **Versões suportadas:** Minecraft 1.8.9 | 1.7.10
+* **Design:** Minimalista & Leve
+* **Foco:** Baixa latência e resposta rápida
 
 ---
 
-## 🚀 Como executar
+## 🌸 Funcionalidades (機能)
 
-1. Instale o **Java 11 ou superior** (testado no Java 21).
-2. Baixe o `mwtAC.jar` e dê dois cliques, ou rode:
-
-```bash
-java -jar mwtAC.jar
-```
-
-Ao abrir: animação de abertura → informe o nome da conta do Minecraft → **ENTRAR**.
-A cabeça da skin vem do NameMC (com reserva em outros serviços). Se o nome não for encontrado, aparece Steve ou Alex.
-
-Ao fechar a janela, o programa continua na **bandeja do Windows** ("Mostrar ícones ocultos"). Para encerrar de vez, use *Encerrar* no ícone da bandeja ou o **Self-destruct** nas Configurações.
+- [x] **CPS Personalizável:** Ajuste fino de cliques por segundo.
+- [x] **Randomização Natural:** Simulação de variação humana para evitar padrões sintéticos.
+- [x] **Keybinds Rápidos:** Ativação/Desativação instantânea com uma tecla.
+- [x] **Consumo Mínimo de CPU/RAM:** Funciona de forma totalmente leve em segundo plano.
 
 ---
 
-## 🔨 Como compilar
+## 🚀 Como Usar ( uso / 使い方 )
 
-Requer **JDK 11+**. Na raiz do projeto:
-
-```bash
-# Linux / macOS
-./build.sh
-
-# Windows
-build.bat
-```
-
-O jar final é gerado em `build/mwtAC.jar`, já com o JNativeHook embutido.
+1. Faça o download da versão mais recente na aba [Releases](../../releases).
+2. Execute o arquivo do **mwtAC**.
+3. Configure a tecla de atalho (Keybind) e o limite de CPS desejado.
+4. Abra o Minecraft (1.8.9 ou 1.7.10) e ative quando necessário.
 
 ---
 
-## 📁 Estrutura
+## 🎋 Configuração Recomendada (設定)
 
-```
-mwtAC.jar          programa pronto (inclui a biblioteca JNativeHook)
-src/mwtac/         código-fonte (.java)
-  Main.java        ponto de entrada (instância única)
-  core/            ClickEngine, Settings, SkinService, TrayService
-  ui/              telas, abas, tema, pop-ups, animações e widgets
-lib/               jnativehook-2.2.2.jar (monitora mouse e teclado globalmente)
-build.sh / .bat    recompilam e geram build/mwtAC.jar
-```
+| Parâmetro | Valor Recomendado |
+| :--- | :--- |
+| **CPS Inicial** | `10 - 14 CPS` |
+| **Jitter / Randomização** | `Ativado (Suave)` |
+| **Modo de Clique** | `Manter Pressionado` |
 
 ---
 
-## 📚 Bibliotecas
+## ⚔️ Isenção de Responsabilidade (免責事項)
 
-- [JNativeHook 2.2.2](https://github.com/kwhat/jnativehook) (GPLv3/LGPL): leitura global do mouse e do teclado.
+Este software foi desenvolvido para fins educacionais e de teste em servidores permitidos. O uso de auto-clickers pode violar as regras de determinados servidores de Minecraft. **Use com responsabilidade.**
 
 ---
 
-## 👤 Autor
-
-Criado por **mwtheuskkj** — [github.com/mwtheuskkj](https://github.com/mwtheuskkj)
+<p center>
+  <sub>Criado com foco e disciplina por <b>mwt</b> • 2026</sub>
+</p>
